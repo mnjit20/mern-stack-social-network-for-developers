@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
-// const keys = require('../../config/keys');
 
 //Load Validation
 const validateProfileInput = require('../../validation/profile');
@@ -95,7 +94,6 @@ router.post('/', passport.authenticate('jwt', {
         }).then(profile => res.json(profile));
       } else {
         //Create profile
-
         //check if handle exists 
         Profile.findOne({
           handle: profileFields.handle
