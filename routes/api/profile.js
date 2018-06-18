@@ -23,6 +23,7 @@ router.get('/test', (req, res) => res.json({
 // @route GET api/profile
 // @dess Get current users profile
 // @access Private
+
 router.get('/', passport.authenticate('jwt', {
   session: false
 }), (req, res) => {
