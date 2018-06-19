@@ -19,6 +19,7 @@ router.get('/test', (req, res) => res.json({
   msg: "Profiles Works!"
 }));
 
+
 // @route GET api/profile
 // @dess Get current users profile
 // @access Private
