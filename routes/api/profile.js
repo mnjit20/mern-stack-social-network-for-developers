@@ -153,6 +153,8 @@ router.get('/user/:user_id', (req, res) => {
     .catch(err => res.status(400).json(err));
 });
 
+
+
 // @route POST api/profile/handle/:handle
 // @desc  Creat user profile
 // @access Private
