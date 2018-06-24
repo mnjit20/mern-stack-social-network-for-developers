@@ -312,7 +312,7 @@ router.delete('/experience/:exp_id', passport.authenticate('jwt', {
 });
 
 
-// @route DELETE api/profile/experience/:exp_id
+// @route DELETE api/profile
 // @desc  DELETE user and profile
 // @access Private
 
